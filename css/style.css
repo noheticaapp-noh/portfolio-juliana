@@ -78,6 +78,13 @@ img {
   background: transparent;
 }
 
+.project-caption {
+  padding: 12px 0 4px;
+  font-size: 0.95rem;
+  line-height: 1.2;
+  color: var(--text);
+}
+
 
 /* Larguras */
 
