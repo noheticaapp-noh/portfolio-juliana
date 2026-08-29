@@ -77,7 +77,10 @@ I’m a designer with more than 15 years of experience creating graphic design, 
     <section class="portfolio-row">
 
           <div class="project project-tall project-keymockup">
-        <img src="assets/keymockup.gif" alt="Motion lottie">
+        <div
+    class="lottie-animation"
+    data-animation="assets/7.json">
+  </div>
                  <div class="project-caption">Motion, Lottie Animations</div>
          <div class="project-subcaption">Motion Design</div>
       </div>
@@ -153,6 +156,17 @@ I’m a designer with more than 15 years of experience creating graphic design, 
     </section>
 
   </main>
+<script src="https://unpkg.com/@lottiefiles/dotlottie-web@latest/dist/dotlottie-web.js"></script>
 
+<script>
+  const animation = document.querySelector('.lottie-animation');
+
+  const dotLottie = new DotLottie({
+    canvas: animation,
+    autoplay: true,
+    loop: true,
+    src: animation.dataset.animation
+  });
+</script>
 </body>
 </html>
