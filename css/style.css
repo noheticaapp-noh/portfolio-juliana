@@ -125,6 +125,16 @@ img {
   background: #e8e8e3;
 }
 
+.text-cardinho {
+  width: 50%;
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px 4%;
+  background: #e8e8e3;
+}
+
 .text-card p {
   max-width: 800px;
   margin: 0;
