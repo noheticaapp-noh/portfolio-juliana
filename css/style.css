@@ -135,6 +135,12 @@ img {
   background: #e8e8e3;
 }
 
+.text-cardinho p {
+  font-size: 2rem;
+  line-height: 1.1;
+  margin: 0;
+}
+
 .text-card p {
   max-width: 1100px;
   margin: 0;
