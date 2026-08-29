@@ -84,6 +84,7 @@ img {
   font-size: 1.5rem;
   line-height: 1.2;
   color: var(--text);
+  font-weight: bold;
 }
 
 .project-subcaption {
