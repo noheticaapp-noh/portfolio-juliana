@@ -170,5 +170,33 @@ I’m a designer with more than 15 years of experience creating graphic design, 
     src: animation.dataset.animation
   });
 </script>
+
+    <!-- IMAGE MODAL -->
+  <script>
+  const modal = document.getElementById("image-modal");
+  const modalImage = document.getElementById("modal-image");
+  const closeButton = document.querySelector(".image-modal-close");
+
+  document.querySelectorAll(".project img").forEach(img => {
+    img.style.cursor = "pointer";
+
+    img.addEventListener("click", () => {
+      modalImage.src = img.src;
+      modalImage.alt = img.alt;
+      modal.classList.add("active");
+    });
+  });
+
+  closeButton.addEventListener("click", () => {
+    modal.classList.remove("active");
+  });
+
+  modal.addEventListener("click", (event) => {
+    if (event.target === modal) {
+      modal.classList.remove("active");
+    }
+  });
+</script>
+  
 </body>
 </html>
