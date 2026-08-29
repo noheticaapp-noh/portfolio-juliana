@@ -81,14 +81,14 @@ img {
 
 .project-caption {
   padding: 12px 0 4px;
-  font-size: 4rem;
+  font-size: 2rem;
   line-height: 1.2;
   color: var(--text);
 }
 
 .project-subcaption {
   padding: 12px 0 4px;
-  font-size: 4rem;
+  font-size: 1.5rem;
   line-height: 1.2;
   color: var(--subtext);
 }
