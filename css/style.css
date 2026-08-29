@@ -118,7 +118,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 60px;
+  padding: 60px 8%;
   background: #e8e8e3;
 }
 
