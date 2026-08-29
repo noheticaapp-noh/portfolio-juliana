@@ -245,3 +245,39 @@ img {
     font-size: 1.5rem;
   }
 }
+
+
+/* ---------- IMAGE MODAL ---------- */
+.image-modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: rgba(0, 0, 0, 0.85);
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+
+.image-modal.active {
+  display: flex;
+}
+
+.image-modal img {
+  width: auto;
+  height: auto;
+  max-width: 95vw;
+  max-height: 90vh;
+  object-fit: contain;
+}
+
+.image-modal-close {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  border: none;
+  background: none;
+  color: white;
+  font-size: 3rem;
+  cursor: pointer;
+}
