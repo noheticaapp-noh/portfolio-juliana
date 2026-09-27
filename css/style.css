@@ -139,7 +139,8 @@ img {
 /* ---------- BLOCOS DE TEXTO ---------- */
 
 .text-card {
-  width: 100%;
+  width: 100vw;
+  margin-left: calc((100% - 100vw) / 2);
   min-height: 280px;
   display: flex;
   align-items: center;
