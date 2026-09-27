@@ -284,3 +284,131 @@ img {
   font-size: 3rem;
   cursor: pointer;
 }
+
+
+/* ---------- PÁGINA INTERNA DE PROJETO ---------- */
+
+.project-back {
+  display: inline-block;
+  margin-bottom: 2.5rem;
+  font-size: 1rem;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.project-back:hover {
+  color: var(--secondtittletext);
+}
+
+.project-page {
+  width: min(900px, calc(100% - 48px));
+  margin: 0 auto;
+  padding: 48px 0 100px;
+}
+
+.project-page-header {
+  margin-bottom: 3.5rem;
+}
+
+.project-page-header h1 {
+  margin: 0 0 0.75rem;
+  font-size: clamp(2.5rem, 6vw, 5rem);
+  font-weight: 500;
+  letter-spacing: -0.05em;
+  line-height: 0.95;
+}
+
+.project-page-subtitle {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: var(--secondtittletext);
+  margin: 0 0 0.75rem;
+}
+
+.project-page-partner {
+  font-size: 1rem;
+  color: var(--subtext);
+  max-width: 65ch;
+  margin: 0;
+}
+
+.project-section {
+  margin-bottom: 3.5rem;
+}
+
+.project-section h2 {
+  font-size: 1.8rem;
+  font-weight: 500;
+  letter-spacing: -0.02em;
+  margin: 0 0 1rem;
+}
+
+.project-section p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: var(--text);
+  max-width: 70ch;
+  margin: 0;
+}
+
+.project-image {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.project-two-images {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--gap);
+}
+
+.project-two-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+.project-images {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+.project-images img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 4px;
+}
+
+/* ---------- RESPONSIVIDADE — PÁGINA DE PROJETO ---------- */
+
+@media (max-width: 800px) {
+  .project-page {
+    width: min(100% - 32px, 600px);
+    padding-top: 32px;
+  }
+
+  .project-page-header {
+    margin-bottom: 2.5rem;
+  }
+
+  .project-two-images {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .project-page {
+    width: calc(100% - 24px);
+    padding-top: 24px;
+    padding-bottom: 60px;
+  }
+
+  .project-page-header h1 {
+    font-size: 3rem;
+  }
+}
