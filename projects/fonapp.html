@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonapp — Juliana Miranda</title>
+
+  <!-- Como este arquivo está dentro de /projetos,
+       precisamos voltar uma pasta para encontrar o CSS -->
+
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    /* PÁGINA DE PROJETO */
+
+    .project-page {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 40px 30px 80px;
+    }
+
+    .project-page-header {
+      margin-bottom: 50px;
+    }
+
+    .project-page-header h1 {
+      margin-bottom: 8px;
+    }
+
+    .project-page-subtitle {
+      margin: 0;
+    }
+
+    .project-back {
+      display: inline-block;
+      margin-bottom: 40px;
+      text-decoration: none;
+    }
+
+    .project-section {
+      margin-bottom: 60px;
+    }
+
+    .project-section h2 {
+      margin-bottom: 15px;
+    }
+
+    .project-section p {
+      max-width: 850px;
+      line-height: 1.6;
+    }
+
+    .project-image {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin-top: 30px;
+    }
+
+    .project-image-small {
+      max-width: 700px;
+    }
+
+    .project-images {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    .project-two-images {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 30px;
+    }
+
+    .project-two-images img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    @media (max-width: 700px) {
+
+      .project-page {
+        padding: 30px 20px 60px;
+      }
+
+      .project-two-images {
+        grid-template-columns: 1fr;
+      }
+
+    }
+  </style>
+
+</head>
+
+<body>
+
+  <main class="project-page">
+
+```
+<a class="project-back" href="../index.html">← Back to portfolio</a>
+
+
+<!-- TÍTULO DO PROJETO -->
+
+<header class="project-page-header">
+
+  <h1>Fonapp</h1>
+
+  <p class="project-page-subtitle">
+    Brand, Id, UI/UX Design
+  </p>
+
+</header>
+
+
+<!-- BLOCO DE TEXTO -->
+
+<section class="project-section">
+
+  <h2>Project</h2>
+
+  <p>
+    COLE AQUI O TEXTO DO PROJETO.
+  </p>
+
+</section>
+
+
+<!-- BLOCO DE TEXTO -->
+
+<section class="project-section">
+
+  <h2>Context</h2>
+
+  <p>
+    COLE AQUI O TEXTO.
+  </p>
+
+</section>
+
+
+<!-- UMA IMAGEM -->
+
+<section class="project-section">
+
+  <img
+    class="project-image"
+    src="../assets/NOME-DA-IMAGEM.png"
+    alt="Descrição da imagem"
+  >
+
+</section>
+
+
+<!-- BLOCO DE TEXTO -->
+
+<section class="project-section">
+
+  <h2>Design</h2>
+
+  <p>
+    COLE AQUI O TEXTO.
+  </p>
+
+</section>
+
+
+<!-- DUAS IMAGENS LADO A LADO -->
+
+<section class="project-section">
+
+  <div class="project-two-images">
+
+    <img
+      src="../assets/IMAGEM-1.png"
+      alt="Descrição da imagem"
+    >
+
+    <img
+      src="../assets/IMAGEM-2.png"
+      alt="Descrição da imagem"
+    >
+
+  </div>
+
+</section>
+
+
+<!-- OUTRO BLOCO DE TEXTO -->
+
+<section class="project-section">
+
+  <h2>Process</h2>
+
+  <p>
+    COLE AQUI O TEXTO.
+  </p>
+
+</section>
+
+
+<!-- VÁRIAS IMAGENS -->
+
+<section class="project-section">
+
+  <div class="project-images">
+
+    <img
+      class="project-image"
+      src="../assets/IMAGEM-1.png"
+      alt="Descrição da imagem"
+    >
+
+    <img
+      class="project-image"
+      src="../assets/IMAGEM-2.png"
+      alt="Descrição da imagem"
+    >
+
+    <img
+      class="project-image"
+      src="../assets/IMAGEM-3.png"
+      alt="Descrição da imagem"
+    >
+
+  </div>
+
+</section>
+
+
+<!-- VOCÊ PODE DUPLICAR ESTE BLOCO QUANTAS VEZES QUISER -->
+
+<section class="project-section">
+
+  <h2>Novo título</h2>
+
+  <p>
+    Novo texto.
+  </p>
+
+</section>
+
+
+<a class="project-back" href="../index.html">
+  ← Back to portfolio
+</a>
+```
+
+  </main>
+
+</body>
+</html>
